@@ -2,13 +2,13 @@ package Arithmetic;
 
 import Binary.*;
 
-public class Addition implements ArithmeticInterface {
+public class Multiply implements ArithmeticInterface{
     private Binary binary = null;
     private Octal octal = null;
     private Hexadecimal hexadecimal = null;
     private Decimal decimal = null;
 
-    Addition(){
+    Multiply(){
         binary = new Binary();
         octal = new Octal();
         hexadecimal = new Hexadecimal();

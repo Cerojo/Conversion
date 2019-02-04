@@ -2,13 +2,13 @@ package Arithmetic;
 
 import Binary.*;
 
-public class Division implements ArithmeticInterface {
+public class Divide implements ArithmeticInterface {
     private Binary binary = null;
     private Octal octal = null;
     private Hexadecimal hexadecimal = null;
     private Decimal decimal = null;
 
-    Division(){
+    Divide(){
         binary = new Binary();
         octal = new Octal();
         hexadecimal = new Hexadecimal();

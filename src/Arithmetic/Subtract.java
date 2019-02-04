@@ -2,19 +2,18 @@ package Arithmetic;
 
 import Binary.*;
 
-public class Multiplication implements ArithmeticInterface{
+public class Subtract implements ArithmeticInterface {
     private Binary binary = null;
     private Octal octal = null;
     private Hexadecimal hexadecimal = null;
     private Decimal decimal = null;
 
-    Multiplication(){
+    Subtract(){
         binary = new Binary();
         octal = new Octal();
         hexadecimal = new Hexadecimal();
         decimal = new Decimal();
     }
-
 
     @Override
     public String binary(String x, String y) {
