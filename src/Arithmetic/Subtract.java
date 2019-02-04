@@ -17,21 +17,54 @@ public class Subtract implements ArithmeticInterface {
 
     @Override
     public String binary(String x, String y) {
-        return null;
+        x = binary.toDecimal(x);
+        y = binary.toDecimal(y);
+        try {
+            return decimal.toBinary(_sub(x,y));
+        }
+        catch (Exception e){
+            return nil;
+        }
     }
 
     @Override
     public String octal(String x, String y) {
-        return null;
+        x = octal.toDecimal(x);
+        y = octal.toDecimal(y);
+        try {
+            return decimal.toOctal(_sub(x,y));
+        }
+        catch (Exception e){
+            return nil;
+        }
     }
 
     @Override
     public String hexadecimal(String x, String y) {
-        return null;
+        x = hexadecimal.toDecimal(x);
+        y = hexadecimal.toDecimal(y);
+        try {
+            return decimal.toHexadecimal(_sub(x,y));
+        }
+        catch (Exception e){
+            return nil;
+        }
     }
 
     @Override
     public String decimal(String x, String y) {
-        return null;
+        try {
+            return _sub(x,y);
+        }
+        catch (Exception e){
+            return nil;
+        }
+    }
+
+    private String _sub(String x, String y){
+        int _x = Integer.parseInt(x);
+        int _y = Integer.parseInt(y);
+        int result = _x-_y;
+        return result+"";
     }
 }
