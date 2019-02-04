@@ -4,7 +4,7 @@ public class Octal implements BinaryInterface {
     Decimal decimal = null;
     Binary binary = null;
 
-    Octal(){
+    public Octal(){
         decimal = new Decimal();
         binary = new Binary();
     }

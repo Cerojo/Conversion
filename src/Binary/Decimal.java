@@ -3,7 +3,7 @@ package Binary;
 public class Decimal implements BinaryInterface{
     private Binary binary;
 
-    Decimal(){
+    public Decimal(){
         binary = new Binary();
     }
 

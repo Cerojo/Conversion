@@ -4,7 +4,7 @@ public class Hexadecimal implements BinaryInterface {
     private Decimal decimal;
     private Binary binary;
 
-    Hexadecimal(){
+    public Hexadecimal(){
         decimal = new Decimal();
         binary = new Binary();
     }

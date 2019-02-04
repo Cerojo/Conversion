@@ -2,7 +2,7 @@ package Binary;
 
 public class Binary implements BinaryInterface {
 
-    Binary(){ }
+    public Binary(){ }
 
     @Override
     public String toBinary(String val) {
