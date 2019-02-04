@@ -3,9 +3,9 @@ import Arithmetic.*;
 public class Main {
     private static Add add = new Add();
     public static void main(String[] args) {
-        String x = "1";
-        String y = "11";
-        print(add.binary(x, y));
+        String x = "A";
+        String y = "A";
+        print(add.hexadecimal(x, y));
     }
 
     private static void print(Object o){

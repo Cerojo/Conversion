@@ -1,5 +1,6 @@
 package Arithmetic;
 public interface ArithmeticInterface {
+    final String nil = "Invalid Input";
 
     String binary(String x, String y);
 

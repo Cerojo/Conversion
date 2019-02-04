@@ -20,26 +20,46 @@ public class Add implements ArithmeticInterface {
     public String binary(String x, String y) {
         x = binary.toDecimal(x);
         y = binary.toDecimal(y);
-        return decimal.toBinary(_add(x,y));
+        try {
+            return decimal.toBinary(_add(x,y));
+        }
+        catch (Exception e){
+            return nil;
+        }
     }
 
     @Override
     public String octal(String x, String y) {
         x = octal.toDecimal(x);
         y = octal.toDecimal(y);
-        return decimal.toOctal(_add(x,y));
+        try {
+            return decimal.toOctal(_add(x,y));
+        }
+        catch (Exception e){
+            return nil;
+        }
     }
 
     @Override
     public String hexadecimal(String x, String y) {
         x = hexadecimal.toDecimal(x);
         y = hexadecimal.toDecimal(y);
-        return decimal.toHexadecimal(_add(x,y));
+        try {
+            return decimal.toHexadecimal(_add(x,y));
+        }
+        catch (Exception e){
+            return nil;
+        }
     }
 
     @Override
     public String decimal(String x, String y) {
-        return _add(x, y);
+        try {
+            return _add(x,y);
+        }
+        catch (Exception e){
+            return nil;
+        }
     }
 
     private String _add(String x, String y){
