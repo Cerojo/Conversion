@@ -8,7 +8,7 @@ public class Multiply implements ArithmeticInterface{
     private Hexadecimal hexadecimal = null;
     private Decimal decimal = null;
 
-    Multiply(){
+    public Multiply(){
         binary = new Binary();
         octal = new Octal();
         hexadecimal = new Hexadecimal();

@@ -8,7 +8,7 @@ public class Subtract implements ArithmeticInterface {
     private Hexadecimal hexadecimal = null;
     private Decimal decimal = null;
 
-    Subtract(){
+    public Subtract(){
         binary = new Binary();
         octal = new Octal();
         hexadecimal = new Hexadecimal();
